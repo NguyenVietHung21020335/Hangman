@@ -9,6 +9,7 @@ string chooseWord()
     int randomIndex= rand()% 3;
     return wordList[randomIndex];
 }
+
 //Kiểm tra có đoán đúng chữ số hay không
 bool contains(string secretWord, char guess)
 {
@@ -17,6 +18,7 @@ bool contains(string secretWord, char guess)
     }
     return true;
 }
+
 //Thay đổi từ sau khi đoán
 string update(string secretWord, string guessedWord, char guess)
 {
